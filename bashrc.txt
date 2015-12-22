@@ -1,0 +1,22 @@
+
+#!/bin/bash                                                                                                                                                                                  
+ 
+## Colorize the ls output ##
+export PS1="\[\033[38;5;39m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;115m\]\h:\[$(tput sgr0)\]\[\033[38;5;220m\]\w\\$ \[$(tput sgr0)\]"
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+      
+alias ls='ls -GFh'
+         
+## Use a long listing format ##
+alias ll='ls -la'
+         
+alias l='ls -CF'
+           
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
+             
+## get rid of command not found ##
+alias cd..='cd ..'
+
+alias vim = 'mvim -v'
